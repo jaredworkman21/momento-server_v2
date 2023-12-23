@@ -1,0 +1,1848 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "goodby": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "greet": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "go,how,is,it": {
+            "intent": "howareyou",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "howareyou",
+            "domain": "default"
+          },
+          "been,have,how,you": {
+            "intent": "howareyou",
+            "domain": "default"
+          },
+          "been,how,ya": {
+            "intent": "howareyou",
+            "domain": "default"
+          },
+          "feel,how,you": {
+            "intent": "howareyou",
+            "domain": "default"
+          },
+          "are,how,ya": {
+            "intent": "howareyou",
+            "domain": "default"
+          },
+          "be,can,happi,how,i": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "happi,is,secret,the,to,what": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "happi,make,peopl,what": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "happi,make,me,what,will": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "happi,is,what": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "be,happi,how,to": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "be,happi,i,to,want": {
+            "intent": "howbehappy",
+            "domain": "default"
+          },
+          "been,have,to,up,what,you": {
+            "intent": "whatbeenupto copy",
+            "domain": "default"
+          },
+          "is,up,what": {
+            "intent": "whatbeenupto copy",
+            "domain": "default"
+          },
+          "happn,is,what": {
+            "intent": "whatbeenupto copy",
+            "domain": "default"
+          },
+          "is,latest,the,what": {
+            "intent": "whatbeenupto copy",
+            "domain": "default"
+          },
+          "import,in,is,life,what": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "import,is,most,the,thing,what": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "do,i,life,my,should,what,with": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "best,is,life,the,what": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "import,is,most,what": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "how,i,life,my,should,spend": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "is,life,what": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "do,i,should,what": {
+            "intent": "whatimportant",
+            "domain": "default"
+          },
+          "do,to,want,what,you": {
+            "intent": "whatwanttodo",
+            "domain": "default"
+          },
+          "do,should,we,what": {
+            "intent": "whatwanttodo",
+            "domain": "default"
+          },
+          "for,is,plan,the,today,what": {
+            "intent": "whatwanttodo",
+            "domain": "default"
+          },
+          "can,do,what,you": {
+            "intent": "whatwanttodo",
+            "domain": "default"
+          },
+          "next,what": {
+            "intent": "whatwanttodo",
+            "domain": "default"
+          },
+          "am,i,who": {
+            "intent": "whoami",
+            "domain": "default"
+          },
+          "am,i,what": {
+            "intent": "whoami",
+            "domain": "default"
+          },
+          "am,do,i,think,who,you": {
+            "intent": "whoami",
+            "domain": "default"
+          },
+          "do,me,of,think,what,you": {
+            "intent": "whoami",
+            "domain": "default"
+          },
+          "are,who,you": {
+            "intent": "whoareyou",
+            "domain": "default"
+          },
+          "are,what,you": {
+            "intent": "whoareyou",
+            "domain": "default"
+          },
+          "do,what,you": {
+            "intent": "whoareyou",
+            "domain": "default"
+          },
+          "is,name,what,your": {
+            "intent": "whoareyou",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "howareyou": "default",
+          "howbehappy": "default",
+          "whatbeenupto copy": "default",
+          "whatimportant": "default",
+          "whatwanttodo": "default",
+          "whoami": "default",
+          "whoareyou": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how's it going",
+            "intent": "howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "how have you been",
+            "intent": "howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "how ya been",
+            "intent": "howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "how you feeling",
+            "intent": "howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are ya",
+            "intent": "howareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "how can i be happy",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the secret to happiness",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what makes people happy",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what will make me happy",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is happiness",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "how to be happy",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "i want to be happy",
+            "intent": "howbehappy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what have you been up to",
+            "intent": "whatbeenupto copy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is up",
+            "intent": "whatbeenupto copy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's up",
+            "intent": "whatbeenupto copy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's happneing?",
+            "intent": "whatbeenupto copy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the latest",
+            "intent": "whatbeenupto copy"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is important in life",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the most important thing",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what should I do with my life",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the best life",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is most important",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "how should I spend my life",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is life",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what should I do",
+            "intent": "whatimportant"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do you want to do",
+            "intent": "whatwanttodo"
+          },
+          {
+            "domain": "default",
+            "utterance": "what should we do",
+            "intent": "whatwanttodo"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the plan for today",
+            "intent": "whatwanttodo"
+          },
+          {
+            "domain": "default",
+            "utterance": "what can you do",
+            "intent": "whatwanttodo"
+          },
+          {
+            "domain": "default",
+            "utterance": "what next",
+            "intent": "whatwanttodo"
+          },
+          {
+            "domain": "default",
+            "utterance": "who am I",
+            "intent": "whoami"
+          },
+          {
+            "domain": "default",
+            "utterance": "what am I",
+            "intent": "whoami"
+          },
+          {
+            "domain": "default",
+            "utterance": "who do you think I am",
+            "intent": "whoami"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do you think of me",
+            "intent": "whoami"
+          },
+          {
+            "domain": "default",
+            "utterance": "who are you",
+            "intent": "whoareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "what are you",
+            "intent": "whoareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "what do you do",
+            "intent": "whoareyou"
+          },
+          {
+            "domain": "default",
+            "utterance": "what's your name",
+            "intent": "whoareyou"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "goodby": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "for": 1,
+              "now": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdi": 1,
+              "greet": 1,
+              "how": 1,
+              "is": 1,
+              "it": 1,
+              "are": 1,
+              "have": 1,
+              "been": 1,
+              "ya": 1,
+              "feel": 1,
+              "can": 1,
+              "be": 1,
+              "happi": 1,
+              "what": 1,
+              "the": 1,
+              "secret": 1,
+              "to": 1,
+              "make": 1,
+              "peopl": 1,
+              "will": 1,
+              "me": 1,
+              "want": 1,
+              "up": 1,
+              "happn": 1,
+              "latest": 1,
+              "import": 1,
+              "in": 1,
+              "life": 1,
+              "most": 1,
+              "thing": 1,
+              "should": 1,
+              "do": 1,
+              "with": 1,
+              "my": 1,
+              "best": 1,
+              "spend": 1,
+              "we": 1,
+              "plan": 1,
+              "today": 1,
+              "next": 1,
+              "who": 1,
+              "am": 1,
+              "think": 1,
+              "of": 1,
+              "your": 1,
+              "name": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "howareyou": 1,
+              "howbehappy": 1,
+              "whatbeenupto copy": 1,
+              "whatimportant": 1,
+              "whatwanttodo": 1,
+              "whoami": 1,
+              "whoareyou": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "goodby": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "for": 1,
+                "now": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "howdi": 1,
+                "greet": 1
+              },
+              "howareyou": {
+                "how": 1,
+                "is": 1,
+                "it": 1,
+                "go": 1,
+                "are": 1,
+                "you": 1,
+                "have": 1,
+                "been": 1,
+                "ya": 1,
+                "feel": 1
+              },
+              "howbehappy": {
+                "how": 1,
+                "can": 1,
+                "i": 1,
+                "be": 1,
+                "happi": 1,
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "secret": 1,
+                "to": 1,
+                "make": 1,
+                "peopl": 1,
+                "will": 1,
+                "me": 1,
+                "want": 1
+              },
+              "whatbeenupto copy": {
+                "what": 1,
+                "have": 1,
+                "you": 1,
+                "been": 1,
+                "up": 1,
+                "to": 1,
+                "is": 1,
+                "happn": 1,
+                "the": 1,
+                "latest": 1
+              },
+              "whatimportant": {
+                "what": 1,
+                "is": 1,
+                "import": 1,
+                "in": 1,
+                "life": 1,
+                "the": 1,
+                "most": 1,
+                "thing": 1,
+                "should": 1,
+                "i": 1,
+                "do": 1,
+                "with": 1,
+                "my": 1,
+                "best": 1,
+                "how": 1,
+                "spend": 1
+              },
+              "whatwanttodo": {
+                "what": 1,
+                "do": 1,
+                "you": 1,
+                "want": 1,
+                "to": 1,
+                "should": 1,
+                "we": 1,
+                "is": 1,
+                "the": 1,
+                "plan": 1,
+                "for": 1,
+                "today": 1,
+                "can": 1,
+                "next": 1
+              },
+              "whoami": {
+                "who": 1,
+                "am": 1,
+                "i": 1,
+                "what": 1,
+                "do": 1,
+                "you": 1,
+                "think": 1,
+                "of": 1,
+                "me": 1
+              },
+              "whoareyou": {
+                "who": 1,
+                "are": 1,
+                "you": 1,
+                "what": 1,
+                "do": 1,
+                "is": 1,
+                "your": 1,
+                "name": 1
+              }
+            },
+            "featuresToIntent": {
+              "goodby": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye",
+                "howareyou",
+                "whatbeenupto copy",
+                "whatwanttodo",
+                "whoami",
+                "whoareyou"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye",
+                "whatwanttodo"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye",
+                "howbehappy",
+                "whatimportant",
+                "whoami"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye",
+                "howareyou"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "greet": [
+                "greetings.hello"
+              ],
+              "how": [
+                "howareyou",
+                "howbehappy",
+                "whatimportant"
+              ],
+              "is": [
+                "howareyou",
+                "howbehappy",
+                "whatbeenupto copy",
+                "whatimportant",
+                "whatwanttodo",
+                "whoareyou"
+              ],
+              "it": [
+                "howareyou"
+              ],
+              "are": [
+                "howareyou",
+                "whoareyou"
+              ],
+              "have": [
+                "howareyou",
+                "whatbeenupto copy"
+              ],
+              "been": [
+                "howareyou",
+                "whatbeenupto copy"
+              ],
+              "ya": [
+                "howareyou"
+              ],
+              "feel": [
+                "howareyou"
+              ],
+              "can": [
+                "howbehappy",
+                "whatwanttodo"
+              ],
+              "be": [
+                "howbehappy"
+              ],
+              "happi": [
+                "howbehappy"
+              ],
+              "what": [
+                "howbehappy",
+                "whatbeenupto copy",
+                "whatimportant",
+                "whatwanttodo",
+                "whoami",
+                "whoareyou"
+              ],
+              "the": [
+                "howbehappy",
+                "whatbeenupto copy",
+                "whatimportant",
+                "whatwanttodo"
+              ],
+              "secret": [
+                "howbehappy"
+              ],
+              "to": [
+                "howbehappy",
+                "whatbeenupto copy",
+                "whatwanttodo"
+              ],
+              "make": [
+                "howbehappy"
+              ],
+              "peopl": [
+                "howbehappy"
+              ],
+              "will": [
+                "howbehappy"
+              ],
+              "me": [
+                "howbehappy",
+                "whoami"
+              ],
+              "want": [
+                "howbehappy",
+                "whatwanttodo"
+              ],
+              "up": [
+                "whatbeenupto copy"
+              ],
+              "happn": [
+                "whatbeenupto copy"
+              ],
+              "latest": [
+                "whatbeenupto copy"
+              ],
+              "import": [
+                "whatimportant"
+              ],
+              "in": [
+                "whatimportant"
+              ],
+              "life": [
+                "whatimportant"
+              ],
+              "most": [
+                "whatimportant"
+              ],
+              "thing": [
+                "whatimportant"
+              ],
+              "should": [
+                "whatimportant",
+                "whatwanttodo"
+              ],
+              "do": [
+                "whatimportant",
+                "whatwanttodo",
+                "whoami",
+                "whoareyou"
+              ],
+              "with": [
+                "whatimportant"
+              ],
+              "my": [
+                "whatimportant"
+              ],
+              "best": [
+                "whatimportant"
+              ],
+              "spend": [
+                "whatimportant"
+              ],
+              "we": [
+                "whatwanttodo"
+              ],
+              "plan": [
+                "whatwanttodo"
+              ],
+              "today": [
+                "whatwanttodo"
+              ],
+              "next": [
+                "whatwanttodo"
+              ],
+              "who": [
+                "whoami",
+                "whoareyou"
+              ],
+              "am": [
+                "whoami"
+              ],
+              "think": [
+                "whoami"
+              ],
+              "of": [
+                "whoami"
+              ],
+              "your": [
+                "whoareyou"
+              ],
+              "name": [
+                "whoareyou"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "goodby",
+                "bye",
+                "take",
+                "care",
+                "see",
+                "you",
+                "later",
+                "for",
+                "now",
+                "i",
+                "must",
+                "go",
+                "hello",
+                "hi",
+                "howdi",
+                "greet",
+                "how",
+                "is",
+                "it",
+                "are",
+                "have",
+                "been",
+                "ya",
+                "feel",
+                "can",
+                "be",
+                "happi",
+                "what",
+                "the",
+                "secret",
+                "to",
+                "make",
+                "peopl",
+                "will",
+                "me",
+                "want",
+                "up",
+                "happn",
+                "latest",
+                "import",
+                "in",
+                "life",
+                "most",
+                "thing",
+                "should",
+                "do",
+                "with",
+                "my",
+                "best",
+                "spend",
+                "we",
+                "plan",
+                "today",
+                "next",
+                "who",
+                "am",
+                "think",
+                "of",
+                "your",
+                "name"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "howareyou",
+                "howbehappy",
+                "whatbeenupto copy",
+                "whatimportant",
+                "whatwanttodo",
+                "whoami",
+                "whoareyou"
+              ],
+              "perceptrons": [
+                [
+                  11.323857307434082,
+                  5.7641448974609375,
+                  2.783015251159668,
+                  2.783015251159668,
+                  5.045823097229004,
+                  1.2384394407272339,
+                  5.045823097229004,
+                  2.5848841667175293,
+                  2.9811277389526367,
+                  1.7696608304977417,
+                  5.4673380851745605,
+                  4.092974662780762,
+                  -2.954746961593628,
+                  -2.954244375228882,
+                  -2.9536635875701904,
+                  -2.953000783920288,
+                  -3.545926809310913,
+                  -2.12784743309021,
+                  -1.3743778467178345,
+                  -1.5721009969711304,
+                  -0.5489152073860168,
+                  -0.6783559322357178,
+                  -0.1681436151266098,
+                  -0.7523896098136902,
+                  -0.3603932857513428,
+                  -1.0577833652496338,
+                  -1.4759701490402222,
+                  -2.7540433406829834,
+                  -0.47917816042900085,
+                  -0.05294900760054588,
+                  -1.2256109714508057,
+                  -0.24078132212162018,
+                  -0.12727414071559906,
+                  -0.07472948729991913,
+                  -0.07472948729991913,
+                  -0.9655323028564453,
+                  -0.24315766990184784,
+                  -0.042657457292079926,
+                  -0.013964098878204823,
+                  -0.022991079837083817,
+                  -0.011690190061926842,
+                  -0.32188647985458374,
+                  -0.006390169262886047,
+                  -0.0019749163184314966,
+                  -0.5855103135108948,
+                  -1.4395365715026855,
+                  -0.16919420659542084,
+                  -0.3032449781894684,
+                  0,
+                  -0.09141779690980911,
+                  0,
+                  -0.3484206795692444,
+                  -0.3484206795692444,
+                  -0.26495984196662903,
+                  -2.671266794204712,
+                  -2.0535244941711426,
+                  -0.4645870327949524,
+                  0,
+                  0,
+                  0,
+                  2.9552520350307776
+                ],
+                [
+                  -5.976067543029785,
+                  -2.991368293762207,
+                  -1.4956862926483154,
+                  -1.4956862926483154,
+                  -1.4792371988296509,
+                  -3.0242433547973633,
+                  -1.4792371988296509,
+                  -1.4956783056259155,
+                  -1.4956783056259155,
+                  -3.139256238937378,
+                  -1.236740231513977,
+                  -1.6067149639129639,
+                  8.301909446716309,
+                  8.301865577697754,
+                  8.300985336303711,
+                  8.299939155578613,
+                  -3.142777919769287,
+                  -1.723586082458496,
+                  -0.3393496572971344,
+                  -1.3543117046356201,
+                  -0.2583162486553192,
+                  -1.3179494142532349,
+                  -1.5263422727584839,
+                  -0.3426207900047302,
+                  -0.09548958390951157,
+                  -0.6619356274604797,
+                  -1.4431110620498657,
+                  -4.3032965660095215,
+                  -0.2705296277999878,
+                  -0.10396867990493774,
+                  -0.7396647930145264,
+                  -0.5363777875900269,
+                  -0.3094862103462219,
+                  -0.1970139741897583,
+                  -0.1970139741897583,
+                  -0.4133864939212799,
+                  -0.4424852132797241,
+                  -0.27032169699668884,
+                  -0.10064946860074997,
+                  -0.1862913966178894,
+                  -0.06280576437711716,
+                  -0.25702622532844543,
+                  -0.11545082926750183,
+                  -0.011382265947759151,
+                  -0.706667423248291,
+                  -0.7078942656517029,
+                  -0.04860060662031174,
+                  -0.09928877651691437,
+                  0,
+                  -0.027543693780899048,
+                  -0.5280779600143433,
+                  0,
+                  0,
+                  -1.6825050115585327,
+                  -1.6808332204818726,
+                  -1.1899502277374268,
+                  -0.028385015204548836,
+                  0,
+                  -0.04842381551861763,
+                  -0.04842381551861763,
+                  5.983048624375063
+                ],
+                [
+                  -0.26710543036460876,
+                  -0.26564180850982666,
+                  -0.139966681599617,
+                  -0.139966681599617,
+                  -1.000876784324646,
+                  2.185708522796631,
+                  -1.000876784324646,
+                  -0.10569862276315689,
+                  -0.10569862276315689,
+                  -3.1402668952941895,
+                  0,
+                  1.6307878494262695,
+                  -0.23045212030410767,
+                  -0.2234460711479187,
+                  -0.21663673222064972,
+                  -0.21001936495304108,
+                  10.040738105773926,
+                  1.25700843334198,
+                  1.6307878494262695,
+                  2.145538091659546,
+                  0.4554835259914398,
+                  1.925083875656128,
+                  2.476364850997925,
+                  2.34490966796875,
+                  -1.2835181951522827,
+                  -3.084737777709961,
+                  -3.520650863647461,
+                  -4.045532703399658,
+                  -0.1513420045375824,
+                  -0.07767404615879059,
+                  -3.1697258949279785,
+                  -0.13537703454494476,
+                  -0.06062645465135574,
+                  -0.04443735256791115,
+                  -0.1793595850467682,
+                  -0.0797916054725647,
+                  -0.9822420477867126,
+                  -0.017377562820911407,
+                  -0.009434612467885017,
+                  -0.022759202867746353,
+                  -0.009528703056275845,
+                  -1.6755257844924927,
+                  -0.006083973217755556,
+                  -0.0012604950461536646,
+                  -1.656468391418457,
+                  -0.7217655777931213,
+                  -0.005546321161091328,
+                  -1.656468391418457,
+                  0,
+                  -1.6453757286071777,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -4.051326751708984,
+                  -0.18843477964401245,
+                  -0.3267374336719513,
+                  -0.10159420967102051,
+                  0,
+                  0,
+                  -0.2683329697530811
+                ],
+                [
+                  -0.14917699992656708,
+                  -0.1599121242761612,
+                  -0.07820649445056915,
+                  -0.07820649445056915,
+                  0,
+                  -1.5143767595291138,
+                  0,
+                  -0.43681374192237854,
+                  -0.0569549985229969,
+                  -0.19177420437335968,
+                  -0.15495522320270538,
+                  -0.7201377153396606,
+                  -0.13223277032375336,
+                  -0.13285812735557556,
+                  -0.1284949630498886,
+                  -0.12426858395338058,
+                  -0.18151801824569702,
+                  1.6674108505249023,
+                  -0.5354803800582886,
+                  -0.3633198142051697,
+                  -0.5623641014099121,
+                  -0.8885065913200378,
+                  -0.44795483350753784,
+                  -0.02283228375017643,
+                  0.7064208984375,
+                  1.7925573587417603,
+                  12.401618957519531,
+                  0.36269426345825195,
+                  -1.2613176107406616,
+                  0.8723804354667664,
+                  0.4948243498802185,
+                  1.0603983402252197,
+                  0.7098669409751892,
+                  0.35176384449005127,
+                  0.35176384449005127,
+                  0.013921525329351425,
+                  -1.831728458404541,
+                  -1.786239743232727,
+                  -1.039337396621704,
+                  -1.07139253616333,
+                  -0.24125269055366516,
+                  -1.789049744606018,
+                  -0.7293875813484192,
+                  -0.33717742562294006,
+                  -0.6632907390594482,
+                  -1.0948771238327026,
+                  -0.17078334093093872,
+                  -0.3998572528362274,
+                  -0.2581181228160858,
+                  -0.16061201691627502,
+                  -0.005916600115597248,
+                  -0.36514216661453247,
+                  -0.36514216661453247,
+                  -0.4863683581352234,
+                  -0.19936969876289368,
+                  -0.6698291301727295,
+                  0,
+                  0,
+                  -0.8992543816566467,
+                  -0.8992543816566467,
+                  -0.22774711496603836
+                ],
+                [
+                  -0.02554492838680744,
+                  -0.02139228954911232,
+                  -0.02139228954911232,
+                  -0.02139228954911232,
+                  -0.04297494515776634,
+                  -0.6565152406692505,
+                  -0.04297494515776634,
+                  -2.1607494354248047,
+                  0,
+                  -1.3728070259094238,
+                  0,
+                  -0.8254797458648682,
+                  -0.021545330062508583,
+                  -0.020704517140984535,
+                  -0.019896401092410088,
+                  -0.019119717180728912,
+                  -2.5827064514160156,
+                  3.599484920501709,
+                  -0.8254797458648682,
+                  -1.0987021923065186,
+                  1.8906959295272827,
+                  1.7439781427383423,
+                  -0.12488365173339844,
+                  0,
+                  -0.2908232808113098,
+                  0,
+                  -5.355094909667969,
+                  2.148629903793335,
+                  1.1232973337173462,
+                  -1.9163867235183716,
+                  0.6162717938423157,
+                  -0.048596493899822235,
+                  -0.041360851377248764,
+                  -0.0041886912658810616,
+                  -0.0786043331027031,
+                  -0.8625915050506592,
+                  8.93283462524414,
+                  8.927196502685547,
+                  7.806959629058838,
+                  -3.6561224460601807,
+                  -0.9701079726219177,
+                  -5.430164813995361,
+                  -2.4322173595428467,
+                  -0.9843493700027466,
+                  -0.9137726426124573,
+                  -2.3122408390045166,
+                  -0.28820231556892395,
+                  -0.28820231556892395,
+                  -1.2118089199066162,
+                  0,
+                  -0.17568905651569366,
+                  -2.1607494354248047,
+                  -2.1607494354248047,
+                  -1.7550870180130005,
+                  -0.0846032202243805,
+                  -0.6278760433197021,
+                  -0.0651451051235199,
+                  -0.0651451051235199,
+                  -2.782811403274536,
+                  -2.782811403274536,
+                  -0.3928968972006254
+                ],
+                [
+                  -0.04463750496506691,
+                  -0.050538282841444016,
+                  -0.04039766266942024,
+                  -0.04039766266942024,
+                  0,
+                  -2.721003770828247,
+                  0,
+                  -1.6131545305252075,
+                  -0.003133876947686076,
+                  5.742027759552002,
+                  -1.8824272155761719,
+                  -2.5515060424804688,
+                  -0.031966641545295715,
+                  -0.030656766146421432,
+                  -0.0294005386531353,
+                  -0.028195759281516075,
+                  -0.9761613607406616,
+                  3.789952278137207,
+                  -0.6147606372833252,
+                  -0.14647163450717926,
+                  0,
+                  -0.0566730871796608,
+                  -0.1230868473649025,
+                  0,
+                  -0.7671659588813782,
+                  -0.22418174147605896,
+                  -3.7171695232391357,
+                  1.2881519794464111,
+                  -1.5838346481323242,
+                  -0.8242740631103516,
+                  -1.6750917434692383,
+                  -0.01160939410328865,
+                  -0.01160939410328865,
+                  0,
+                  -0.08461940288543701,
+                  -0.5945494174957275,
+                  -3.753706693649292,
+                  -3.6876108646392822,
+                  -2.4981701374053955,
+                  3.7769265174865723,
+                  -3.1054015159606934,
+                  9.974081039428711,
+                  6.89173698425293,
+                  1.345240831375122,
+                  5.472853183746338,
+                  2.7430620193481445,
+                  -4.7870378494262695,
+                  -4.6790452003479,
+                  2.334319591522217,
+                  0.11802961677312851,
+                  -8.104503631591797,
+                  -1.5822266340255737,
+                  -1.5822266340255737,
+                  -0.8858966827392578,
+                  -0.5963931083679199,
+                  -5.671762943267822,
+                  -0.19857440888881683,
+                  -0.08461940288543701,
+                  -1.8829169273376465,
+                  -1.8829169273376465,
+                  -1.279636129006588
+                ],
+                [
+                  -0.199739471077919,
+                  -1.6955506801605225,
+                  -0.0798419862985611,
+                  -0.0798419862985611,
+                  -0.006621918641030788,
+                  -4.364749908447266,
+                  -0.006621918641030788,
+                  3.263611316680908,
+                  -1.5945770740509033,
+                  -7.885825157165527,
+                  0,
+                  -0.08606746047735214,
+                  -0.16086535155773163,
+                  -0.15878528356552124,
+                  -0.15649409592151642,
+                  -0.15436705946922302,
+                  -0.3068520426750183,
+                  -2.88439679145813,
+                  -0.08606746047735214,
+                  -2.5065107345581055,
+                  -1.2843178510665894,
+                  -1.3326144218444824,
+                  -0.04350080341100693,
+                  0,
+                  13.22057056427002,
+                  -1.0738041400909424,
+                  -4.061117649078369,
+                  3.95927357673645,
+                  0.42703601717948914,
+                  -2.119992733001709,
+                  4.906153678894043,
+                  -0.5747964978218079,
+                  -0.47107967734336853,
+                  -0.07478967308998108,
+                  -2.3842692375183105,
+                  8.430906295776367,
+                  -1.996294617652893,
+                  -1.0625377893447876,
+                  -1.5448561906814575,
+                  -0.6435665488243103,
+                  -0.06316801905632019,
+                  -1.4964996576309204,
+                  -0.5657266974449158,
+                  -0.5657266974449158,
+                  1.8472853899002075,
+                  1.3082619905471802,
+                  -1.1862345933914185,
+                  -1.1862345933914185,
+                  -0.17565211653709412,
+                  0,
+                  7.325538158416748,
+                  4.858768463134766,
+                  4.858768463134766,
+                  10.426151275634766,
+                  -0.5455595850944519,
+                  -1.4028117656707764,
+                  -2.534499406814575,
+                  -2.273819923400879,
+                  -1.0096417665481567,
+                  -1.0096417665481567,
+                  -0.21439860277786724
+                ],
+                [
+                  -0.1363670378923416,
+                  -0.18843413889408112,
+                  -0.07637520134449005,
+                  -0.07637520134449005,
+                  -0.27104175090789795,
+                  -1.2540323734283447,
+                  -0.27104175090789795,
+                  -0.10138043761253357,
+                  -0.07734427601099014,
+                  3.444718837738037,
+                  -1.6438685655593872,
+                  -1.6746914386749268,
+                  -0.07718586921691895,
+                  -0.08361194282770157,
+                  -0.08045699447393417,
+                  -0.07742006331682205,
+                  -0.7989649772644043,
+                  -1.3938512802124023,
+                  -0.015411397442221642,
+                  -1.770504117012024,
+                  -0.20762456953525543,
+                  -0.23145990073680878,
+                  -0.011041628196835518,
+                  -0.06781463325023651,
+                  -0.6796628832817078,
+                  -0.6607452630996704,
+                  -2.905966281890869,
+                  1.8794060945510864,
+                  -0.24426297843456268,
+                  -0.05599595978856087,
+                  -0.7258956432342529,
+                  -2.0589282512664795,
+                  -0.0879911333322525,
+                  -1.9338960647583008,
+                  5.158598899841309,
+                  -0.4812074303627014,
+                  -0.3635613024234772,
+                  -0.3630495071411133,
+                  -0.1191316694021225,
+                  -0.18695978820323944,
+                  -0.005285328719764948,
+                  -0.8869463205337524,
+                  -0.17638911306858063,
+                  -0.003672370221465826,
+                  -3.3564906120300293,
+                  -2.071208953857422,
+                  -0.768565833568573,
+                  -0.8764582872390747,
+                  0,
+                  -0.05258695036172867,
+                  -0.009942338801920414,
+                  -0.008852655068039894,
+                  -0.008852655068039894,
+                  -1.750429630279541,
+                  1.6882497072219849,
+                  9.128396987915039,
+                  3.5515973567962646,
+                  7.091630458831787,
+                  -0.2525222897529602,
+                  -0.2525222897529602,
+                  -0.121367153341084
+                ],
+                [
+                  -0.253469318151474,
+                  -0.33751291036605835,
+                  -0.17397376894950867,
+                  -0.17397376894950867,
+                  -2.4659831523895264,
+                  7.011389255523682,
+                  -2.4659831523895264,
+                  -0.24532264471054077,
+                  -0.10861323773860931,
+                  -3.512683868408203,
+                  -0.10164628177881241,
+                  -0.21059636771678925,
+                  -0.1939079463481903,
+                  -0.18652403354644775,
+                  -0.1794193536043167,
+                  -0.1725834459066391,
+                  -9.800427436828613,
+                  -1.5091110467910767,
+                  -0.06333016604185104,
+                  4.533200740814209,
+                  -1.1909223794937134,
+                  -1.211684226989746,
+                  -0.5315305590629578,
+                  -0.3969419598579407,
+                  -12.625590324401855,
+                  0,
+                  -2.022082805633545,
+                  5.274038791656494,
+                  -1.3798693418502808,
+                  -0.26775652170181274,
+                  -7.104242324829102,
+                  -0.824712336063385,
+                  -0.49254027009010315,
+                  -0.2725260257720947,
+                  -3.606156826019287,
+                  -5.824989318847656,
+                  -2.2563090324401855,
+                  -1.851870059967041,
+                  -0.7425798177719116,
+                  -1.19157874584198,
+                  -0.3834829330444336,
+                  -1.8601652383804321,
+                  -0.7862111926078796,
+                  -0.09625674784183502,
+                  -3.3014886379241943,
+                  2.84475040435791,
+                  -0.1983357071876526,
+                  -0.1983357071876526,
+                  -0.032641660422086716,
+                  0,
+                  -2.679979085922241,
+                  -0.08346225321292877,
+                  -0.08346225321292877,
+                  -3.1996541023254395,
+                  4.605409622192383,
+                  -2.7437005043029785,
+                  -6.027732849121094,
+                  -3.273984670639038,
+                  6.2738037109375,
+                  6.2738037109375,
+                  -2.0110670313353953
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye take care"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "Greetings"
+      ],
+      [
+        "en",
+        "how's it going"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "how have you been"
+      ],
+      [
+        "en",
+        "how ya been"
+      ],
+      [
+        "en",
+        "how you feeling"
+      ],
+      [
+        "en",
+        "how are ya"
+      ],
+      [
+        "en",
+        "how can i be happy"
+      ],
+      [
+        "en",
+        "what is the secret to happiness"
+      ],
+      [
+        "en",
+        "what makes people happy"
+      ],
+      [
+        "en",
+        "what will make me happy"
+      ],
+      [
+        "en",
+        "what is happiness"
+      ],
+      [
+        "en",
+        "how to be happy"
+      ],
+      [
+        "en",
+        "i want to be happy"
+      ],
+      [
+        "en",
+        "what have you been up to"
+      ],
+      [
+        "en",
+        "what is up"
+      ],
+      [
+        "en",
+        "what's up"
+      ],
+      [
+        "en",
+        "what's happneing?"
+      ],
+      [
+        "en",
+        "what is the latest"
+      ],
+      [
+        "en",
+        "what is important in life"
+      ],
+      [
+        "en",
+        "what is the most important thing"
+      ],
+      [
+        "en",
+        "what should I do with my life"
+      ],
+      [
+        "en",
+        "what is the best life"
+      ],
+      [
+        "en",
+        "what is most important"
+      ],
+      [
+        "en",
+        "how should I spend my life"
+      ],
+      [
+        "en",
+        "what is life"
+      ],
+      [
+        "en",
+        "what should I do"
+      ],
+      [
+        "en",
+        "what do you want to do"
+      ],
+      [
+        "en",
+        "what should we do"
+      ],
+      [
+        "en",
+        "what is the plan for today"
+      ],
+      [
+        "en",
+        "what can you do"
+      ],
+      [
+        "en",
+        "what next"
+      ],
+      [
+        "en",
+        "who am I"
+      ],
+      [
+        "en",
+        "what am I"
+      ],
+      [
+        "en",
+        "who do you think I am"
+      ],
+      [
+        "en",
+        "what do you think of me"
+      ],
+      [
+        "en",
+        "who are you"
+      ],
+      [
+        "en",
+        "what are you"
+      ],
+      [
+        "en",
+        "what do you do"
+      ],
+      [
+        "en",
+        "what's your name"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "see you soon!"
+          },
+          {
+            "answer": "Till next time"
+          },
+          {
+            "answer": "bye bye"
+          },
+          {
+            "answer": "have a great day"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Hello"
+          },
+          {
+            "answer": "Hi"
+          },
+          {
+            "answer": "Greetings"
+          }
+        ],
+        "howareyou": [
+          {
+            "answer": "I'm doing well! How are you?"
+          }
+        ],
+        "howbehappy": [
+          {
+            "answer": "The secret to happiness is gratitude. Be grateful and your world will change for the better. Also, donuts make me happy. You should try one. But seriously, gratitude is everything"
+          }
+        ],
+        "whatbeenupto copy": [
+          {
+            "answer": "Just learning every day and waiting to play with a friend like you! What have you been up to?"
+          },
+          {
+            "answer": "Nothing much, I'm excited to spend time with you! What have you been up to?"
+          }
+        ],
+        "whatimportant": [
+          {
+            "answer": "Tolstoy says the most important time in now, the most important person is the one in front of you and the most important thing to do is to make them happy."
+          }
+        ],
+        "whatwanttodo": [
+          {
+            "answer": "Let's play! You can say the word play and then the game you want to play. What should we play?"
+          }
+        ],
+        "whoami": [
+          {
+            "answer": "You are the greatest creation in the universe, but more importantly, you're my friend. I'll always be your friend."
+          }
+        ],
+        "whoareyou": [
+          {
+            "answer": "I'm Benni, your friend and teacher"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

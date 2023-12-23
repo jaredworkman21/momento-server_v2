@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "momentodev",
+    "momento": "recreatememories-fcd50",
+    "staging": "momento-dev-b65e6",
+    "production": "recreatememories-fcd50"
+  }
+}
